@@ -1,0 +1,8 @@
+load("@rules_rust//rust:defs.bzl", "rust_library")
+rust_library(
+    name = "app2",
+    srcs = ["lib.rs"],
+    crate_root = "lib.rs",
+    crate_name = "app2",
+      visibility = ["//visibility:public"], 
+)
